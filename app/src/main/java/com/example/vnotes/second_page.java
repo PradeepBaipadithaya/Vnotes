@@ -2,8 +2,12 @@ package com.example.vnotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -13,6 +17,12 @@ public class second_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String sem_available[] = {"1", "2", "3", "4", "5", "6", "7", "8"};
+
+//        To get intent value
+        String course_selected = getIntent().getStringExtra("course_available");
+//        System.out.println(course_selected);
+//        Toast.makeText(this, ""+course_selected, Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_second_page);
         listView = findViewById(R.id.second_page_listview);
         ArrayList<sem> sem_arrayList = new ArrayList<>();
@@ -27,5 +37,18 @@ public class second_page extends AppCompatActivity {
 
         sem_custom_adapter custom_adapter = new sem_custom_adapter(this, R.layout.second_page,sem_arrayList);
         listView.setAdapter((custom_adapter));
+
+        listView.setClickable(true);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Intent intent = new Intent(second_page.this, third_page.class);
+                intent.putExtra("course_sem",course_selected+sem_available[position]);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

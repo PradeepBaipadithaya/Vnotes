@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +17,13 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.listview);
+        String course_available[] = {"CS","AI","DS","EC","CV","ME"};
         //Create initial page data by arraylist
         ArrayList<Course> arrayList = new ArrayList<>();
         arrayList.add(new Course(R.drawable.computer_science_engineering,"Computer Science Engineering",R.drawable.forward));
@@ -39,10 +42,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent intent = new Intent(MainActivity.this, second_page.class);
-                String subject = listView.getItemAtPosition(position).toString();
+//                String course_selected = listView.getItemAtPosition(position).toString();
+//                Toast.makeText(MainActivity.this, ""+position, Toast.LENGTH_SHORT).show();
+                intent.putExtra("course_available",course_available[position]);
                 startActivity(intent);
             }
         });
-
     }
 }
