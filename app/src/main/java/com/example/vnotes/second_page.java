@@ -18,6 +18,7 @@ public class second_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String sem_available[] = {"1", "2", "3", "4", "5", "6", "7", "8"};
+        String first_year_subject[] ={"p","c"};
 
 //        To get intent value
         String course_selected = getIntent().getStringExtra("course_available");
@@ -26,8 +27,8 @@ public class second_page extends AppCompatActivity {
         setContentView(R.layout.activity_second_page);
         listView = findViewById(R.id.second_page_listview);
         ArrayList<sem> sem_arrayList = new ArrayList<>();
-        sem_arrayList.add(new sem(R.drawable.sem_1,"1 sem"));
-        sem_arrayList.add(new sem(R.drawable.sem_2,"2 sem"));
+        sem_arrayList.add(new sem(R.drawable.sem_1,"Physics Cycle"));
+        sem_arrayList.add(new sem(R.drawable.sem_2,"Chemistry Cycle"));
         sem_arrayList.add(new sem(R.drawable.sem_3,"3 sem"));
         sem_arrayList.add(new sem(R.drawable.sem_4,"4 sem"));
         sem_arrayList.add(new sem(R.drawable.sem_5,"5 sem"));
@@ -44,7 +45,10 @@ public class second_page extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent intent = new Intent(second_page.this, third_page.class);
-                intent.putExtra("course_sem",course_selected+sem_available[position]);
+                if(position==0 || position==1)
+                    intent.putExtra("course_sem",first_year_subject[position]);
+                else
+                    intent.putExtra("course_sem",course_selected+sem_available[position]);
                 startActivity(intent);
             }
         });

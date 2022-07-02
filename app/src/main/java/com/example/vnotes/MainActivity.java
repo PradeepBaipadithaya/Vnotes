@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Database_creation handler = new Database_creation(this, "Vnotes",null,1);
+//        Database_creation subject_handler = new Database_creation(this,"Vnotes.db",null,1);
+//        handler.add_subject("1", new subject("18CS62","CGV"));
+        //handler.get_subject("1");
+       // handler.close();
         listView = findViewById(R.id.listview);
         String course_available[] = {"CS","AI","DS","EC","CV","ME"};
         //Create initial page data by arraylist

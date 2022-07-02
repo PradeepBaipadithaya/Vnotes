@@ -4,9 +4,9 @@ public class subject {
     String sub_name;
     String sub_code;
 
-    public subject(String sub_name, String sub_code) {
-        this.sub_name = sub_name;
+    public subject(String sub_code, String sub_name) {
         this.sub_code = sub_code;
+        this.sub_name = sub_name;
     }
 
     public String getSub_name() {
