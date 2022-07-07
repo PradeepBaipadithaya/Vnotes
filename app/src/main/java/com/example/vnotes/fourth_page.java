@@ -27,9 +27,11 @@ public class fourth_page extends AppCompatActivity {
         setContentView(R.layout.fourth_page);
         ArrayList<String> notes = new ArrayList<>();
         listView = findViewById(R.id.fourth_page_listview);
-        notes.add("notes 3");
-        notes.add("notes 1");
-        notes.add("notes 3");
+        notes.add("Module 1");
+        notes.add("Module 2");
+        notes.add("Module 3");
+        notes.add("Module 4");
+        notes.add("Module 5");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,notes);
         listView.setAdapter(arrayAdapter);

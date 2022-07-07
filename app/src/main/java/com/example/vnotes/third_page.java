@@ -32,16 +32,17 @@ public class third_page extends AppCompatActivity {
         String sem_selected = getIntent().getStringExtra("course_sem");
 
         Database_creation subject_handler = new Database_creation(this,"Vnotes.db",null,1);
-//        subject_handler.add_subject(sem_selected+"1", new subject("18CV51","Construction Management & Entrepreneurship"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18CV52","Analysis of Indeterminate Structures"));
-//        subject_handler.add_subject(sem_selected+"3", new subject("18CV53","Design of RC Structural Elements"));
-//        subject_handler.add_subject(sem_selected+"4", new subject("18CV54","Basic Geotechnical Engineering"));
-//        subject_handler.add_subject(sem_selected+"5", new subject("18CV55","Municipal Wastewater Engineering"));
-//        subject_handler.add_subject(sem_selected+"6", new subject("18CV56","Highway Engineering"));
-//        subject_handler.add_subject(sem_selected+"7", new subject("18CVL57","Surveying Practice"));
-//        subject_handler.add_subject(sem_selected+"8", new subject("18CVL58","Concrete and Highway Materials Laboratory"));
-//        subject_handler.add_subject(sem_selected+"9", new subject("18CPC49","Constitution of India, Professional Ethics and Cyber Law"));
-//        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP41","ADDITIONAL MATHEMATICS – I"));
+//        subject_handler.add_subject(sem_selected+"1", new subject("18ME81","Energy Engineering"));
+//        subject_handler.add_subject(sem_selected+"2", new subject("18ME824","Automobile Engineering"));
+//        subject_handler.add_subject(sem_selected+"3", new subject("18ME63","Heat Transfer"));
+//        subject_handler.add_subject(sem_selected+"4", new subject("18ME641","Non-Traditional Machining"));
+//        subject_handler.add_subject(sem_selected+"5", new subject("18CV651","Remote Sensing and GIS"));
+//        subject_handler.add_subject(sem_selected+"6", new subject("18EC652","Sensors and Signal Conditioning"));
+//        subject_handler.add_subject(sem_selected+"7", new subject("18CS653","Programming in JAVA"));
+//        subject_handler.add_subject(sem_selected+"8", new subject("18MEL66","Computer Aided Modelling and Analysis Lab"));
+//        subject_handler.add_subject(sem_selected+"9", new subject("18MEL67","Heat Transfer Lab"));
+//        subject_handler.add_subject(sem_selected+"10", new subject("18MEL67","Heat Transfer Lab"));
+//        subject_handler.add_subject(sem_selected+"11", new subject("18KVK49","Vyavaharika Kannada"));
 
 
 
@@ -60,7 +61,7 @@ public class third_page extends AppCompatActivity {
 
         listView = findViewById(R.id.third_page_listview);
         int j=0;
-        if (sem_selected.equals("p") || sem_selected.equals("c") || sem_selected.equals("CS5")) {
+        if (sem_selected.equals("p") || sem_selected.equals("c") || sem_selected.equals("CS5") || sem_selected.equals("EC6") || sem_selected.equals("ME6")){
             j=10;
         }
         else if (sem_selected.equals("CS3")|| sem_selected.equals("CS4") || sem_selected.equals("EC3") || sem_selected.equals("EC4") || sem_selected.equals("CV3") || sem_selected.equals("CV4")){
@@ -74,6 +75,18 @@ public class third_page extends AppCompatActivity {
         }
         else if (sem_selected.equals("CV5")){
             j=9;
+        }
+        else if (sem_selected.equals("CS8") || sem_selected.equals("CV8") || sem_selected.equals("EC8")){
+            j=4;
+        }
+        else if (sem_selected.equals("CV6")){
+            j=13;
+        }
+        else if (sem_selected.equals("ME4")){
+            j=12;
+        }
+        else if (sem_selected.equals("ME8")){
+            j=3;
         }
         ArrayList<subject> sub_arrayList = new ArrayList<>();
         for(int i=1; i<j;i++){

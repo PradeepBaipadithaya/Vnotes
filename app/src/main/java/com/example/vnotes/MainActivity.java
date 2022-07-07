@@ -28,12 +28,13 @@ public class MainActivity extends AppCompatActivity {
         //handler.get_subject("1");
        // handler.close();
         listView = findViewById(R.id.listview);
-        String course_available[] = {"CS","AI","DS","EC","CV","ME"};
+        String course_available[] = {"CS","EC","CV","ME"};
         //Create initial page data by arraylist
         ArrayList<Course> arrayList = new ArrayList<>();
         arrayList.add(new Course(R.drawable.computer_science_engineering,"Computer Science Engineering",R.drawable.forward));
-        arrayList.add(new Course(R.drawable.ai_and_ml_engineering,"AI and ML Engineering",R.drawable.forward));
-        arrayList.add(new Course(R.drawable.data_science_engineering,"Data Science Engineering",R.drawable.forward));
+//        arrayList.add(new Course(R.drawable.ai_and_ml_engineering,"AI and ML Engineering",R.drawable.forward));
+//        arrayList.add(new Course(R.drawable.data_science_engineering,"Data Science Engineering",R.drawable.forward));
+
         arrayList.add(new Course(R.drawable.electronic_and_communication_engineering,"Electronics and Communication Engineering",R.drawable.forward));
         arrayList.add(new Course(R.drawable.civil_engineering,"Civil Engineering",R.drawable.forward));
         arrayList.add(new Course(R.drawable.mechanical_engineering,"Mechanical Engineering",R.drawable.forward));
