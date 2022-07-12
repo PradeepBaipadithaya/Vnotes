@@ -58,10 +58,8 @@ public class fourth_page extends AppCompatActivity {
                 }
                 custom_adapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
 
@@ -71,9 +69,7 @@ public class fourth_page extends AppCompatActivity {
                 Uri uri = Uri.parse(""+ urls.get(position)); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
-
             }
         });
     }
 }
-
