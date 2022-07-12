@@ -7,40 +7,73 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.firebase.ui.database.FirebaseListAdapter;
+import com.firebase.ui.database.FirebaseListOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
+import java.util.Queue;
 
 public class fourth_page extends AppCompatActivity {
     ListView listView;
-    String[] urls ={
-            "https://www.youtube.com/watch?v=geWi5v7_Zsc",
-            "https://internshipstudio.com/courses/machine-learning-internship/",
-            "https://developer.android.com/studio?gclid=Cj0KCQjwmuiTBhDoARIsAPiv6L9WhEsJzTGuTseVZljUZVEUEjpj5JeOs0dws5pWFtxOxx74AJ5mRh0aAriLEALw_wcB&gclsrc=aw.ds"
-    };
+    FirebaseListAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fourth_page);
-        ArrayList<String> notes = new ArrayList<>();
+        ArrayList<module_content> module_arraylist = new ArrayList<>();
         listView = findViewById(R.id.fourth_page_listview);
-        notes.add("Module 1");
-        notes.add("Module 2");
-        notes.add("Module 3");
-        notes.add("Module 4");
-        notes.add("Module 5");
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,notes);
-        listView.setAdapter(arrayAdapter);
+        String subcode = getIntent().getStringExtra("subcode");
+        ArrayList<String> urls = new ArrayList<String>();
+//        module_arraylist.add(new module_content("Module 1"));
+//        module_arraylist.add(new module_content("Module 2"));
+//        module_arraylist.add(new module_content("Module 3"));
+//        module_arraylist.add(new module_content("Module 4"));
+//        Toast.makeText(this, ""+subcode, Toast.LENGTH_SHORT).show();
+        module_custom_adapter custom_adapter = new module_custom_adapter(this, R.layout.module_page_pattern,module_arraylist);
+        listView.setAdapter((custom_adapter));
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("notes").child(""+subcode);
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {;
+                for(DataSnapshot s:snapshot.getChildren()){
+                    String str = s.getKey().toString();
+                    String value = s.getValue().toString();
+                    urls.add(value);
+                    module_arraylist.add(new module_content(""+str));
+                }
+                custom_adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent url_link = new Intent(Intent.ACTION_VIEW, Uri.parse(urls[i]));
-                startActivity(url_link);
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Uri uri = Uri.parse(""+ urls.get(position)); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
             }
         });
     }
 }
+

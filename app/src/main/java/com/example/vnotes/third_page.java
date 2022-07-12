@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class third_page extends AppCompatActivity {
     ListView listView;
     
-    Cursor subject_selected_cursor;
+    Cursor subject_selected_cursor,sub;
     String subcode_selected;
 //    String subcode_selected1;
     String subname_selected;
@@ -111,6 +111,9 @@ public class third_page extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent intent = new Intent(third_page.this, fourth_page.class);
+                sub=subject_handler.get_subject_code(sem_selected+(position+1));
+                String sc = sub.getString(0);
+                intent.putExtra("subcode",sc);
                 startActivity(intent);
             }
         });
