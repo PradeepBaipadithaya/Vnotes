@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "762001305941",
+    "project_id": "vnotes-bc412",
+    "storage_bucket": "vnotes-bc412.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762001305941:android:2bb99926a3fec66bedffdc",
+        "android_client_info": {
+          "package_name": "com.example.vnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762001305941-18lsu0fvies1ju781ajo3d4ul63luv9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH85VgOEA3ElA6bokz9TQNcknQJmlMq9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762001305941-18lsu0fvies1ju781ajo3d4ul63luv9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
