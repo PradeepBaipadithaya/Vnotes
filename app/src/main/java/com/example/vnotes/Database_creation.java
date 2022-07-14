@@ -9,6 +9,8 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class Database_creation extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Vnotes";
     public static final String TABLE_NAME = "subject_table";
@@ -26,7 +28,7 @@ public class Database_creation extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String create = "CREATE TABLE if not exists subject_table (key_value TEXT,subcode TEXT,subname TEXT)";
+        String create = "CREATE TABLE if not exists subject_table (key_value TEXT,subcode TEXT primary key,subname TEXT)";
         sqLiteDatabase.execSQL(create);
     }
 
@@ -34,7 +36,7 @@ public class Database_creation extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         String drop = String.valueOf("DROP TABLE IF EXISTS");
         sqLiteDatabase.execSQL(drop, new String[]{"subject_table"});
-//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+"TABLE_NAME");
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+"TABLE_NAME");
         onCreate(sqLiteDatabase);
     }
 
@@ -62,6 +64,32 @@ public class Database_creation extends SQLiteOpenHelper {
         }
         return cursor;
     }
+
+//
+//    public ArrayList<subject> get_subject_code(String key_value){
+//        ArrayList subject_code = new ArrayList();
+//        ArrayList subject_code_arraylist = new ArrayList();
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        Cursor cursor = db.rawQuery("SELECT subcode,subname FROM subject_table",new String[]{String.valueOf(key_value)});
+//        if(cursor.getCount()>0){
+//            int i=0;
+//
+//            while (cursor.moveToNext()){
+//                Log.d("mytag",""+cursor.getString(2));
+//                subject_code.add(cursor.getString(0));
+//                subject_code.add(cursor.getString(1));
+//
+////                job_alert.add(cursor.getString(3));
+//                subject_code_arraylist.add(i,subject_code);
+//                i++;
+//            }
+//        }
+//        else{
+//            Log.d("mytag","Some error");
+//        }
+//        db.close();
+//        return subject_code_arraylist;
+//    }
 
 
 }

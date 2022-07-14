@@ -22,16 +22,16 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(""+sem_selected+"9", new subject("21SFH29","Scientific Foundations of Health"));
 
 ////18 Scheme CS 3rd sem Subject
-//        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31","Transform Calculus, Fourier Series And Numerical Techniques"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18CS32","Data Structures and Applications"));
-//        subject_handler.add_subject(sem_selected+"3", new subject("18CS33","Analog and Digital Electronics"));
-//        subject_handler.add_subject(sem_selected+"4", new subject("18CS34","Computer Organization"));
-//        subject_handler.add_subject(sem_selected+"5", new subject("18CS35","Software Engineering"));
-//        subject_handler.add_subject(sem_selected+"6", new subject("18CS36","Discrete Mathematical Structures"));
-//        subject_handler.add_subject(sem_selected+"7", new subject("18CSL37","Analog and Digital Electronics Laboratory"));
-//        subject_handler.add_subject(sem_selected+"8", new subject("18CSL38","Data Structures and Applications Laboratory"));
-//        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39","Constitution of India, Professional Ethics and Cyber Law"))
-//        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP31","ADDITIONAL MATHEMATICS – I "));
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31","Transform Calculus, Fourier Series And Numerical Techniques"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18CS32","Data Structures and Applications"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18CS33","Analog and Digital Electronics"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18CS34","Computer Organization"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18CS35","Software Engineering"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CS36","Discrete Mathematical Structures"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18CSL37","Analog and Digital Electronics Laboratory"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18CSL38","Data Structures and Applications Laboratory"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39","Constitution of India, Professional Ethics and Cyber Law"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP31","ADDITIONAL MATHEMATICS – I "));
 
 
 ////18 Scheme CS 4th sem Subject
@@ -43,8 +43,9 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(sem_selected+"6", new subject("18CS46","Data Communication"));
         subject_handler.add_subject(sem_selected+"7", new subject("18CSL47","Design and Analysis of Algorithm Laboratory"));
         subject_handler.add_subject(sem_selected+"8", new subject("18CSL48","Microcontroller and Embedded Systems Laboratory"));
-        subject_handler.add_subject(sem_selected+"9", new subject("18CS49","Environmental Studies"));
-        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP41","ADDITIONAL MATHEMATICS – II"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18KAK49","Aadalitha Kannada"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18KVK49","Vyavaharika Kannada"));
+        subject_handler.add_subject(sem_selected+"11", new subject("18MATDIP41","ADDITIONAL MATHEMATICS – II"));
 
 ////18 Scheme CS 5th sem Subject
         subject_handler.add_subject(sem_selected+"1", new subject("18CS51","Management, Entrepreneurship for IT idustry"));
@@ -71,10 +72,27 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(sem_selected+"11", new subject("18CSMP68","Mobile Application Development"));
 
 
+  ////18 Scheme CS 7th sem Subject
+          subject_handler.add_subject(sem_selected+"1", new subject("18CS71","Artificial Intelligence and Machine Learning"));
+          subject_handler.add_subject(sem_selected+"2", new subject("18CS72","Big Data Analytics"));
+          subject_handler.add_subject(sem_selected+"3", new subject("18CS734","User Interface Design"));
+          subject_handler.add_subject(sem_selected+"4", new subject("18CS741","Digital Image Processing"));
+          subject_handler.add_subject(sem_selected+"5", new subject("18ME751","Energy and Environment"));
+          subject_handler.add_subject(sem_selected+"6", new subject("18EC752","Neural Networks"));
+          subject_handler.add_subject(sem_selected+"7", new subject("18CV753","Environmental Protection and Management"));
+          subject_handler.add_subject(sem_selected+"8", new subject("18CSL76","Artificial Intelligence and Machine Learning Laboratory"));
+          subject_handler.add_subject(sem_selected+"9", new subject("18CSP77","Project Work Phase 1"));
 
+////18 Scheme CS 8th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18CS81","Internet of Things and Applications"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18CS822","Storage Area Network"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18CS823","NoSQL Database"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18CSP83","Project Work Phase II"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18CSS84","Technical Seminar"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CSI85","Internship"));
 
   ////18 Scheme EC 3rd sem Subject
-        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31","Transform Calculus, Fourier Series And Numerical Techniques"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31 (EC)","Transform Calculus, Fourier Series And Numerical Techniques"));
         subject_handler.add_subject(sem_selected+"2", new subject("18EC32","Network Theory"));
         subject_handler.add_subject(sem_selected+"3", new subject("18EC33","Electronic Devices"));
         subject_handler.add_subject(sem_selected+"4", new subject("18EC34","Digital System Design"));
@@ -82,11 +100,11 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(sem_selected+"6", new subject("18EC36","Power Electronics & Instrumentation"));
         subject_handler.add_subject(sem_selected+"7", new subject("18ECL37","Electronic Devices & Instrumentation Laboratory"));
         subject_handler.add_subject(sem_selected+"8", new subject("18ECL38","Digital System Design Laboratory"));
-        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39","Constitution of India, Professional Ethics and Cyber Law"));
-        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP31","ADDITIONAL MATHEMATICS – I "));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39 (EC)","Constitution of India, Professional Ethics and Cyber Law"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP31 (EC)","ADDITIONAL MATHEMATICS – I "));
 
   ////18 Scheme EC 4rd sem Subject
-        subject_handler.add_subject(sem_selected+"1", new subject("18MAT41","Complex Analysis, Probability and Statistical Methods"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT41 (EC)","Complex Analysis, Probability and Statistical Methods"));
         subject_handler.add_subject(sem_selected+"2", new subject("18EC42","Analog Circuits"));
         subject_handler.add_subject(sem_selected+"3", new subject("18EC43","Control Systems"));
         subject_handler.add_subject(sem_selected+"4", new subject("18EC44","Engineering Statistics & Linear Algebra"));
@@ -94,33 +112,72 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(sem_selected+"6", new subject("18EC46","Microcontroller"));
         subject_handler.add_subject(sem_selected+"7", new subject("18ECL47","Microcontroller Laboratory"));
         subject_handler.add_subject(sem_selected+"8", new subject("18ECL48","Analog Circuits Laboratory"));
-        subject_handler.add_subject(sem_selected+"9", new subject("18CPC49","Constitution of India, Professional Ethics and Cyber Law"));
-        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP41","ADDITIONAL MATHEMATICS – II"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18KAK49 (EC)","Aadalitha Kannada"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18KVK49 (EC)","Vyavaharika Kannada"));
+        subject_handler.add_subject(sem_selected+"11", new subject("18MATDIP41 (EC)","ADDITIONAL MATHEMATICS – II"));
 
 
   ////18 Scheme EC 5th sem Subject
-        subject_handler.add_subject(sem_selected+"1", new subject("18EC51","Technological Innovation Management And Entrepreneurship"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18ES51","Technological Innovation Management And Entrepreneurship"));
         subject_handler.add_subject(sem_selected+"2", new subject("18EC52","Digital Signal Processing"));
         subject_handler.add_subject(sem_selected+"3", new subject("18EC53","Principles of Communication Systems"));
         subject_handler.add_subject(sem_selected+"4", new subject("18EC54","Information Theory & Coding"));
         subject_handler.add_subject(sem_selected+"5", new subject("18EC55","Electromagnetic Waves"));
         subject_handler.add_subject(sem_selected+"6", new subject("18EC56","Verilog HDL"));
         subject_handler.add_subject(sem_selected+"7", new subject("18ECL57","Digital Signal Processing Laboratory"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18ECL58","HDL Laboratory"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CIV59 (EC)","Environmental Studies"));
+
+ ////18 Scheme EC 6th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18EC61","Digital Communication"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18EC62","Embedded Systems"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18EC63","Microwave and Antenas"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18EC646","Python Application Programming"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18ME651 (EC)","Non-Conventional Energy Sources"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CV651 (EC)","Remote Sensing and GIS"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18CS653 (EC)","Programming in JAVA"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18ECL66","Embedded Systems Lab"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18ECL67","Communication Lab"));
+
+
+ ////18 Scheme EC 7th sem Subject
+         subject_handler.add_subject(sem_selected+"1", new subject("18EC71","Computer Networks"));
+         subject_handler.add_subject(sem_selected+"2", new subject("18EC72","VLSI Design"));
+         subject_handler.add_subject(sem_selected+"3", new subject("18EC733","Digital Image Processing"));
+         subject_handler.add_subject(sem_selected+"4", new subject("18EC741","IoT & Wireless Sensor Networks"));
+         subject_handler.add_subject(sem_selected+"5", new subject("18EC745","Machine Learning with Python"));
+         subject_handler.add_subject(sem_selected+"6", new subject("18ME751 (EC)","Energy and Environment"));
+         subject_handler.add_subject(sem_selected+"7", new subject("18CS753 (EC)","Introduction to Artificial Intelligence"));
+         subject_handler.add_subject(sem_selected+"8", new subject("18ECL76","Computer Networks Lab"));
+         subject_handler.add_subject(sem_selected+"9", new subject("18ECL77","VLSI Laboratory"));
+         subject_handler.add_subject(sem_selected+"10", new subject("18ECP78","Project Work Phase-I"));
+
+
+ ////18 Scheme EC 8th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18EC81","Wireless and Cellular Communication"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18EC821","Network Security"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18EC822","Micro Electro Mechanical Systems"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18ECP83","Project Work Phase -2"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18ECS84","Technical Seminar"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18ECI85","Internship"));
+
+
 
   ////18 Scheme CV 3rd sem Subject
-        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31","Transform Calculus, Fourier Series And Numerical Techniques"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31 (CV)","Transform Calculus, Fourier Series And Numerical Techniques"));
         subject_handler.add_subject(sem_selected+"2", new subject("18CV32","Strength of Materials"));
         subject_handler.add_subject(sem_selected+"3", new subject("18CV33","Fluid Mechanics"));
         subject_handler.add_subject(sem_selected+"4", new subject("18CV34","Building Materials and Construction"));
         subject_handler.add_subject(sem_selected+"5", new subject("18CV35","Basic Surveying"));
         subject_handler.add_subject(sem_selected+"6", new subject("18CV36","Engineering Geology"));
         subject_handler.add_subject(sem_selected+"7", new subject("18CVL37","Computer Aided Building Planning & Drawing"));
-        subject_handler.add_subject(sem_selected+"8", new subject("18CVL38","Building Materials Testing Laboratory"));
-        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39","Constitution of India, Professional Ethics and Cyber Law"));
-        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP31","ADDITIONAL MATHEMATICS – I"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18CVL38","Basic Materials Testing Laboratory"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39 (CV)","Constitution of India, Professional Ethics and Cyber Law"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP31 (CV)","ADDITIONAL MATHEMATICS – I"));
+
 
   ////18 Scheme CV 4th sem Subject
-        subject_handler.add_subject(sem_selected+"1", new subject("18MAT41","Complex Analysis, Probability and Statistical Methods"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT41 (CV)","Complex Analysis, Probability and Statistical Methods"));
         subject_handler.add_subject(sem_selected+"2", new subject("18CV42","Analysis of Determinate Structures"));
         subject_handler.add_subject(sem_selected+"3", new subject("18CV43","Applied Hydraulics"));
         subject_handler.add_subject(sem_selected+"4", new subject("18CV44","Concrete Technology"));
@@ -128,8 +185,9 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(sem_selected+"6", new subject("18CV46","Water Supply & Treatment Engineering"));
         subject_handler.add_subject(sem_selected+"7", new subject("18CVL47","Engineering Geology Laboratory"));
         subject_handler.add_subject(sem_selected+"8", new subject("18CVL48","Fluid Mechanics and Hydraulic Machines Laboratory"));
-        subject_handler.add_subject(sem_selected+"9", new subject("18CPC49","Constitution of India, Professional Ethics and Cyber Law"));
-        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP41","ADDITIONAL MATHEMATICS – I"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18KAK49 (CV)","Aadalitha Kannada"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18KVK49 (CV)","Vyavaharika Kannada"));
+        subject_handler.add_subject(sem_selected+"11", new subject("18MATDIP41 (CV)","ADDITIONAL MATHEMATICS – 2"));
 
   ////18 Scheme CV 5th sem Subject
         subject_handler.add_subject(sem_selected+"1", new subject("18CV51","Construction Management & Entrepreneurship"));
@@ -140,77 +198,110 @@ subject_handler.add_subject(""+sem_selected+"9", new subject("21IDT19","Innovati
         subject_handler.add_subject(sem_selected+"6", new subject("18CV56","Highway Engineering"));
         subject_handler.add_subject(sem_selected+"7", new subject("18CVL57","Surveying Practice"));
         subject_handler.add_subject(sem_selected+"8", new subject("18CVL58","Concrete and Highway Materials Laboratory"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CIV59 (CV)","Environmental Studies"));
 
-       ////18 Scheme CS 8th sem Subject
-        //        subject_handler.add_subject(sem_selected+"1", new subject("18CS81","Internet of Things and Applications"));
-        //        subject_handler.add_subject(sem_selected+"2", new subject("18CS822","Storage Area Network"));
-        //        subject_handler.add_subject(sem_selected+"3", new subject("18CS823","NoSQL Database"));
 
-               ////18 Scheme CV 6th sem Subject
-          //     subject_handler.add_subject(sem_selected+"1", new subject("18CV61","Design of Steel Structural Elements"));
-        //        subject_handler.add_subject(sem_selected+"2", new subject("18CV62","Applied Geotechnical Engineering"));
-        //        subject_handler.add_subject(sem_selected+"3", new subject("18CV63","Hydrology and Irrigation Engineering"));
-        //        subject_handler.add_subject(sem_selected+"4", new subject("18CV642","Solid Waste Management"));
-        //        subject_handler.add_subject(sem_selected+"5", new subject("18CV643","Alternate Building Materials"));
-        //        subject_handler.add_subject(sem_selected+"6", new subject("18CV644","Ground Improvement Techniques"));
-        //        subject_handler.add_subject(sem_selected+"7", new subject("18EC652","Sensors and Signal Conditioning"));
-        //        subject_handler.add_subject(sem_selected+"8", new subject("18ME651","Non-Conventional Energy Sources"));
-        //        subject_handler.add_subject(sem_selected+"9", new subject("18CS653","Programming in JAVA"));
-        //        subject_handler.add_subject(sem_selected+"10", new subject("18CVL66","Software Application Laboratory"));
-        //        subject_handler.add_subject(sem_selected+"11", new subject("18CVL67","Environmental Engineering Laboratory"));
-       //        subject_handler.add_subject(sem_selected+"12", new subject("18CVEP68","Extensive Survey project"));
+  ////18 Scheme CV 6th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18CV61","Design of Steel Structural Elements"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18CV62","Applied Geotechnical Engineering"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18CV63","Hydrology and Irrigation Engineering"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18CV642","Solid Waste Management"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18CV643","Alternate Building Materials"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CV644","Ground Improvement Techniques"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18EC652 (CV)","Sensors and Signal Conditioning"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18ME651 (CV)","Non-Conventional Energy Sources"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CS653 (CV)","Programming in JAVA"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18CVL66","Software Application Laboratory"));
+        subject_handler.add_subject(sem_selected+"11", new subject("18CVL67","Environmental Engineering Laboratory"));
+        subject_handler.add_subject(sem_selected+"12", new subject("18CVEP68","Extensive Survey project"));
 
+
+  ////18 Scheme CV 7th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18CV71","Quantity Surveying & Contact Management"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18CV72","Design of RCC & Steel Structures"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18CV732","Air Pollution & Control"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18CV744","Design of Hydraulic Structures"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18ME751 (CV)","Energy and Environment"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CVL76","Computer Aided Detailing of Structures"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18CVL77","Geotechnical Engineering Laboratory"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18CVP78","Project Work Phase -I"));
 
  ////18 Scheme CV 8th sem Subject
-       //        subject_handler.add_subject(sem_selected+"1", new subject("18CV81","Design of Pre Stressed Concrete"));
-       //        subject_handler.add_subject(sem_selected+"2", new subject("18CV821","Bridge Engineering"));
-       //        subject_handler.add_subject(sem_selected+"3", new subject("18CV824","Rehabilitation & Retrofitting"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18CV81","Design of Pre Stressed Concrete"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18CV821","Bridge Engineering"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18CV824","Rehabilitation & Retrofitting"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18CVP83","Project Work Phase - 2"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18CVS84","Technical Seminar"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CVI85","Internship"));
 
 
- ////18 Scheme EC 8th sem Subject
- //subject_handler.add_subject(sem_selected+"1", new subject("18EC81","Wireless and Cellular Communication"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18EC821","Network Security"));
-//        subject_handler.add_subject(sem_selected+"3", new subject("18EC822","Micro Electro Mechanical Systems"));
 
 
- ////18 Scheme EC 6th sem Subject
-//        subject_handler.add_subject(sem_selected+"1", new subject("18EC61","Digital Communication"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18EC62","Embedded Systems"));
-//        subject_handler.add_subject(sem_selected+"3", new subject("18EC63","Microwave and Antenas"));
-//        subject_handler.add_subject(sem_selected+"4", new subject("18EC646","Python Application Programming"));
-//        subject_handler.add_subject(sem_selected+"5", new subject("18ME651","Non-Conventional Energy Sources"));
-//        subject_handler.add_subject(sem_selected+"6", new subject("18CV651","Remote Sensing and GIS"));
-//        subject_handler.add_subject(sem_selected+"7", new subject("18CS653","Programming in JAVA"));
-//        subject_handler.add_subject(sem_selected+"8", new subject("18ECL66","Embedded Systems Lab"));
-//        subject_handler.add_subject(sem_selected+"9", new subject("18ECL67","Communication Lab"));
+ ////18 Scheme ME 3rd sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT31 (ME)","Transform calculus,Fourier series and numerical techniques"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18ME32","Mechanics Of Materials"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18ME33","Basic Thermodynamics"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18ME34","Material Science"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18ME35A","Metal Cutting And Forming"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18ME36A","Computer Aided Machine Drawing"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18MEL37A","Materials Testing Lab"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18MEL38A","Workshop & Machine Shop Practice"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18KAK39 (ME)","Aadalitha Kannada"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18KVK39 (ME)","Vyavaharika Kannada"));
+        subject_handler.add_subject(sem_selected+"11", new subject("18MATDIP31 (ME)","ADDITIONAL MATHEMATICS – 1"));
 
 
  ////18 Scheme ME 4th sem Subject
-//        subject_handler.add_subject(sem_selected+"1", new subject("18MAT41","Complex Analysis, Probability and Statistical Methods"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18ME42","Applied thermodynamics"));
-//        subject_handler.add_subject(sem_selected+"3", new subject("18ME43","Fluid Mechanics"));
-//        subject_handler.add_subject(sem_selected+"4", new subject("18ME44","Kinematics Of Machines"));
-//        subject_handler.add_subject(sem_selected+"5", new subject("18ME45B","Metal Casting And Welding"));
-//        subject_handler.add_subject(sem_selected+"6", new subject("18ME46B","Mechanical Measurements And Metrology"));
-//        subject_handler.add_subject(sem_selected+"7", new subject("18MEL47B","Mechanical Measurements And Metrology Lab"));
-//        subject_handler.add_subject(sem_selected+"8", new subject("18MEL48B","Foundry, Forging And Welding Lab"));
-//        subject_handler.add_subject(sem_selected+"9", new subject("18MATDIP41","Additional Mathematics-2"));
-//        subject_handler.add_subject(sem_selected+"10", new subject("18KAK49","Aadalitha Kannada"));
-//        subject_handler.add_subject(sem_selected+"11", new subject("18KVK49","Vyavaharika Kannada"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18MAT41 (ME)","Complex Analysis, Probability and Statistical Methods"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18ME42","Applied thermodynamics"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18ME43","Fluid Mechanics"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18ME44","Kinematics Of Machines"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18ME45B","Metal Casting And Welding"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18ME46B","Mechanical Measurements And Metrology"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18MEL47B","Mechanical Measurements And Metrology Lab"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18MEL48B","Foundry, Forging And Welding Lab"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CPC39 (ME)","Constitution of India, Professional Ethics and Cyber Law"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18MATDIP41 (ME)","Additional Mathematics-2"));
+
+ ////18 Scheme ME 5th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18ME51","Management and Economics"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18ME52","Design of Machine Elements-I"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18ME53","Dynamics of Machinery"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18ME54","Turbo Machines"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18ME55","Fluid Power Engineering"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18ME56","Operation Management"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18MEL57","Fluid Mechanics & Machinery Lab"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18MEL58","Energy Lab"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18CIV59 (ME)","Environmental Studies"));
 
 
  ////18 Scheme ME 6th sem Subject
-//        subject_handler.add_subject(sem_selected+"1", new subject("18ME61","Finite Element Methods"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18ME62","Design Of Machine Elements II"));
-//        subject_handler.add_subject(sem_selected+"3", new subject("18ME63","Heat Transfer"));
-//        subject_handler.add_subject(sem_selected+"4", new subject("18ME641","Non-Traditional Machining"));
-//        subject_handler.add_subject(sem_selected+"5", new subject("18CV651","Remote Sensing and GIS"));
-//        subject_handler.add_subject(sem_selected+"6", new subject("18EC652","Sensors and Signal Conditioning"));
-//        subject_handler.add_subject(sem_selected+"7", new subject("18CS653","Programming in JAVA"));
-//        subject_handler.add_subject(sem_selected+"8", new subject("18MEL66","Computer Aided Modelling and Analysis Lab"));
-//        subject_handler.add_subject(sem_selected+"9", new subject("18MEL67","Heat Transfer Lab"));
-//
+        subject_handler.add_subject(sem_selected+"1", new subject("18ME61","Finite Element Methods"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18ME62","Design Of Machine Elements II"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18ME63","Heat Transfer"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18ME641","Non-Traditional Machining"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18CV651 (ME)","Remote Sensing and GIS"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18EC652 (ME)","Sensors and Signal Conditioning"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18CS653 (ME)","Programming in JAVA"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18MEL66","Computer Aided Modelling and Analysis Lab"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18MEL67","Heat Transfer Lab"));
+        subject_handler.add_subject(sem_selected+"10", new subject("18MEMP68","Mini Project"));
+
+ ////18 Scheme ME 7th sem Subject
+        subject_handler.add_subject(sem_selected+"1", new subject("18ME71","Control Engineering"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18ME72","Computer Aided Design and Manufacturing"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18ME735","Operations Research"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18ME741","Additive Manufacturing"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18CS753 (ME)","Artificial Intelligent"));
+        subject_handler.add_subject(sem_selected+"6", new subject("18CV753 (ME)","Environment protection & management"));
+        subject_handler.add_subject(sem_selected+"7", new subject("18MEL76","Computer Integrated Manufacturing Lab"));
+        subject_handler.add_subject(sem_selected+"8", new subject("18MEL77","Design Lab"));
+        subject_handler.add_subject(sem_selected+"9", new subject("18MEP78","Project Work Phase - 1"));
+
 
  ////18 Scheme ME 8th sem Subject
-//        subject_handler.add_subject(sem_selected+"1", new subject("18ME81","Energy Engineering"));
-//        subject_handler.add_subject(sem_selected+"2", new subject("18ME824","Automobile Engineering"));
+        subject_handler.add_subject(sem_selected+"1", new subject("18ME81","Energy Engineering"));
+        subject_handler.add_subject(sem_selected+"2", new subject("18ME824","Automobile Engineering"));
+        subject_handler.add_subject(sem_selected+"3", new subject("18MEP83","Project Phase II"));
+        subject_handler.add_subject(sem_selected+"4", new subject("18MES84","Technical Seminar"));
+        subject_handler.add_subject(sem_selected+"5", new subject("18MEI85","Internship"));
