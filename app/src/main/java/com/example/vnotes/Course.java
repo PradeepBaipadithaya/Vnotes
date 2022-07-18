@@ -3,12 +3,12 @@ package com.example.vnotes;
 public class Course {
     int image;
     String name;
-    int forwardImage;
 
-    public Course(int image,String name,int forwardImage) {
+
+    public Course(int image,String name) {
         this.image = image;
         this.name = name;
-        this.forwardImage = forwardImage;
+
     }
 
     public int getImage() {
@@ -27,11 +27,7 @@ public class Course {
         this.name = name;
     }
 
-    public int getForwardImage() {
-        return forwardImage;
-    }
 
-    public void setForwardImage(int forwardImage) {
-        this.forwardImage = forwardImage;
-    }
+
+
 }

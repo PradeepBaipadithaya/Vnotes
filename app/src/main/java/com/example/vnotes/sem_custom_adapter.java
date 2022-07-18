@@ -1,6 +1,7 @@
 package com.example.vnotes;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +36,7 @@ public class sem_custom_adapter extends ArrayAdapter<sem> {
         TextView textView = convertView.findViewById(R.id.sem_name);
         imageView.setImageResource(getItem(position).getSem());
         textView.setText(getItem(position).getSem_name());
-
+//        convertView.setBackgroundColor(position % 2 == 0 ? Color.parseColor("#2e3133") : Color.parseColor("#343637"));
         return convertView;
     }
 

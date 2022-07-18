@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -21,6 +22,7 @@
             android:layout_height="match_parent"
             android:gravity="center|start"
             android:text="TextView"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

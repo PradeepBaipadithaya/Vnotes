@@ -8,6 +8,7 @@
         android:id="@+id/third_page_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

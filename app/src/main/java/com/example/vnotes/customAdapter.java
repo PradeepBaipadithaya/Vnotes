@@ -37,10 +37,10 @@ public class customAdapter extends ArrayAdapter<Course> {
         }
         ImageView imageView = convertView.findViewById(R.id.image_name);
         TextView textView = convertView.findViewById(R.id.text_name);
-        ImageView imgForward = convertView.findViewById(R.id.forward);
+//        ImageView imgForward = convertView.findViewById(R.id.forward);
         imageView.setImageResource(getItem(position).getImage());
         textView.setText(getItem(position).getName());
-        imgForward.setImageResource(getItem(position).getForwardImage());
+//        imgForward.setImageResource(getItem(position).getForwardImage());
         return convertView;
     }
 

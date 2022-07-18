@@ -1,6 +1,9 @@
 package com.example.vnotes;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -44,32 +47,55 @@ public class fourth_page extends AppCompatActivity {
 //        module_arraylist.add(new module_content("Module 3"));
 //        module_arraylist.add(new module_content("Module 4"));
 //        Toast.makeText(this, ""+subcode, Toast.LENGTH_SHORT).show();
-        module_custom_adapter custom_adapter = new module_custom_adapter(this, R.layout.module_page_pattern,module_arraylist);
+        module_custom_adapter custom_adapter = new module_custom_adapter(this, R.layout.module_page_pattern, module_arraylist);
         listView.setAdapter((custom_adapter));
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("notes").child(""+subcode);
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {;
-                for(DataSnapshot s:snapshot.getChildren()){
-                    String str = s.getKey().toString();
-                    String value = s.getValue().toString();
-                    urls.add(value);
-                    module_arraylist.add(new module_content(""+str));
-                }
-                custom_adapter.notifyDataSetChanged();
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
-        });
+//        To check internet connection
+        boolean connected = false;
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED || connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+        } else
+            connected = false;
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Uri uri = Uri.parse(""+ urls.get(position)); // missing 'http://' will cause crashed
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
+        if (connected) {
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("notes").child("" + subcode);
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    ;
+                    for (DataSnapshot s : snapshot.getChildren()) {
+                        String str = s.getKey().toString();
+                        String value = s.getValue().toString();
+                        urls.add(value);
+                        module_arraylist.add(new module_content("" + str));
+                    }
+                    custom_adapter.notifyDataSetChanged();
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                }
+            });
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                    try {
+                        Uri uri = Uri.parse("" + urls.get(position)); // missing 'http://' will cause crashed
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        startActivity(intent);
+                    }
+                    catch (Exception e){
+                        Intent intent = new Intent(fourth_page.this,no_notes.class);
+                        startActivity(intent);
+                    }
+                }
+            });
+        }
+        else{
+            Intent intent = new Intent(fourth_page.this,no_internet.class);
+            startActivity(intent);
+        }
     }
 }

@@ -2,6 +2,7 @@ package com.example.vnotes;
 
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class module_custom_adapter extends ArrayAdapter<module_content> {
         }
         TextView textView = convertView.findViewById(R.id.module_no);
         textView.setText(getItem(position).getModule_no());
+        convertView.setBackgroundColor(position % 2 == 0 ? Color.parseColor("#2e3133") : Color.parseColor("#343637"));
         return convertView;
     }
 }

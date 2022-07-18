@@ -82,8 +82,7 @@ public class third_page extends AppCompatActivity {
 //        for(int i=0; i<count*2;i+=2){
 //            arrayList_display.add(new subject(""+array_.get(i),""+array_.get(i+1)));
 //        }
-//
-//
+
 
         ArrayList<subject> sub_arrayList = new ArrayList<>();
         for(int i=1; i<j;i++){

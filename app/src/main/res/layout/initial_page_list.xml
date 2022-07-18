@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
 
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -20,11 +21,11 @@
         <ImageView
             android:id="@+id/image_name"
             android:layout_width="wrap_content"
-            android:layout_height="185dp"
+            android:layout_height="178dp"
+            android:contentDescription="TODO"
             android:padding="0dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/computer_science_engineering"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/computer_science_engineering" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,22 +35,15 @@
 
             <TextView
                 android:id="@+id/text_name"
-                android:layout_width="334dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
                 android:layout_toLeftOf="@+id/forward"
                 android:fontFamily="sans-serif-black"
                 android:includeFontPadding="true"
                 android:singleLine="true"
                 android:text="TextView"
-                android:textColor="@color/design_default_color_on_secondary"
-                android:textSize="25dp" />
-
-            <ImageView
-                android:id="@+id/forward"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/forward" />
+                android:textColor="@color/design_default_color_background"
+                android:textSize="22sp" />
 
         </LinearLayout>
 
