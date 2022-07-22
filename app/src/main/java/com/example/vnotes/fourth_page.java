@@ -96,6 +96,7 @@ public class fourth_page extends AppCompatActivity {
         else{
             Intent intent = new Intent(fourth_page.this,no_internet.class);
             startActivity(intent);
+            finish();
         }
     }
 }

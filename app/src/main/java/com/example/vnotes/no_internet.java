@@ -14,7 +14,7 @@ public class no_internet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_internet);
         lottieAnimationView = (LottieAnimationView) findViewById(R.id.lottie);
-        lottieAnimationView.setAnimation(R.raw.no_internet);
+        lottieAnimationView.setAnimation(R.raw.try_animation);
         lottieAnimationView.playAnimation();
     }
 }
