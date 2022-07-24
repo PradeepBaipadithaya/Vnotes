@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vnotes">
-
+    package="com.vnotesvtu.vnotes">
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -12,32 +11,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VNotes">
         <activity
-            android:name=".no_notes"
+            android:name="com.vnotesvtu.vnotes.no_notes"
             android:exported="false" />
         <activity
-            android:name=".no_internet"
+            android:name="com.vnotesvtu.vnotes.no_internet"
             android:exported="false" />
         <activity
-            android:name=".second_page"
+            android:name="com.vnotesvtu.vnotes.second_page"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.vnotesvtu.vnotes.MainActivity" />
         <activity
-            android:name=".third_page"
+            android:name="com.vnotesvtu.vnotes.third_page"
             android:exported="false"
-            android:parentActivityName=".second_page" />
+            android:parentActivityName="com.vnotesvtu.vnotes.second_page" />
         <activity
-            android:name=".fourth_page"
+            android:name="com.vnotesvtu.vnotes.fourth_page"
             android:exported="false"
-            android:parentActivityName=".third_page" />
+            android:parentActivityName="com.vnotesvtu.vnotes.third_page"/>
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.vnotesvtu.vnotes.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

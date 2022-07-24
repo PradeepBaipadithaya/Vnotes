@@ -3,16 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:backgroundTint="@color/black"
+    android:maxWidth="900dp">
 
-    <ListView
-        android:id="@+id/fourth_page_listview"
-        android:layout_width="411dp"
-        android:layout_height="734dp"
-        android:background="@color/cardview_dark_background"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notes"
+                android:layout_width="208dp"
+                android:layout_height="match_parent"
+                android:background="#444648"
+                android:gravity="center"
+                android:text="Notes"
+                android:textColor="#F0FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/question_paper"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:background="#2E3133"
+                android:gravity="center"
+                android:text="Question paper"
+                android:textColor="#A1FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/fourth_page_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_dark_background" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
